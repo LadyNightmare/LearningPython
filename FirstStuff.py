@@ -14,3 +14,9 @@ print("The lenght of '%(s)s' is %(l)s characters, and the first 9 characters are
 
 print(2+float("3.5"))
 
+print("Let's see how boolean operations work: not(2) is %(b1)s, not(None) is %(b2)s, 2 and '' is '%(b3)s', 'hello' and 2 is %(b4)s, '' and '2' is '%(b5)s'" % {'b1': not(2), 'b2': not(None), 'b3': 2 and "", 'b4': ("hello" and 2), 'b5': ("" and 2)})
+
+print("Let's check now the or operations: '' or 2 is %(b1)s, 2 or '' is %(b2)s, 2 or 3 is %(b3)s, 3 or 2 is %(b4)s" % {'b1': "" or 2, 'b2': 2 or "", 'b3': 2 or 3, 'b4': 3 or 2 })
+
+print("Sí") if True else print("No")
+
