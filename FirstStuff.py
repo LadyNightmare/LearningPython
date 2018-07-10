@@ -18,5 +18,20 @@ print("Let's see how boolean operations work: not(2) is %(b1)s, not(None) is %(b
 
 print("Let's check now the or operations: '' or 2 is %(b1)s, 2 or '' is %(b2)s, 2 or 3 is %(b3)s, 3 or 2 is %(b4)s" % {'b1': "" or 2, 'b2': 2 or "", 'b3': 2 or 3, 'b4': 3 or 2 })
 
-print("Sí") if True else print("No")
+print("Let's now check how it works with some other examples like 3 < 3.5: %(b1)s, cat < cats: %(b2)s, mayor > Major: %(b3)s and leño < lesa: %(b4)s" % {'b1': 3 < 3.5, 'b2': "cat" < "cats", 'b3': "mayor" > "Major", 'b4': ("leño" < "lesa")})
 
+print("As we can see, mayor is greater than Major because capital letters value in ascii is lower than non capital ones.")
+print("In the case of leño it's because ñ is a special character, we should skip charcaters that are not the English ones.")
+
+variable = 2
+
+print("Yes") if (0 < variable and variable < 5) else print("No")
+print("Yes") if (0 < variable or variable > 0) else print("No")
+
+print("The only operator for comparing is ==, it works for numbers, 3.0 == 3: %(n)s, cute == cute: %(s)s" % {'n': 3.0 == 3, 's': "cute" == "cute"})
+
+print("Let's check the Morgan Laws:")
+true = True
+false = False
+print("not(true and false) == not(true) or not(false): %(b)s" % {'b': (not(true and false)) == (not(true) or not(false))})
+print("not(true or false) == not(true) and not(false): %(b)s" % {'b': (not(true or false)) == (not(true) and not(false))})
