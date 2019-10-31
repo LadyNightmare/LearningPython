@@ -36,4 +36,4 @@ false = False
 print("not(true and false) == not(true) or not(false): %(b)s" % {'b': (not(true and false)) == (not(true) or not(false))})
 print("not(true or false) == not(true) and not(false): %(b)s" % {'b': (not(true or false)) == (not(true) and not(false))})
 
-print("2 plus 2 is " + str(2+2) + ", minus 1 that's 3. Quick maths. Everyday man's on the block. Smoke trees.")
+print("2 plus 2 is " + str(2+2) + ", minus 1 that's " + str(2+2-1) + ". Quick maths. Everyday man's on the block. Smoke trees.")
